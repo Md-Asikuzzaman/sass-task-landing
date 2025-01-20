@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 export default function Home() {
   return (
     <div>
-      <h1>home</h1>
+      <h1>Hello World!!! My name is asik, what is your name as far something for all demos and takes </h1>
     </div>
   );
 }
