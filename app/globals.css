@@ -4,7 +4,11 @@
 
 @layer components {
   .oval-shape {
-    @apply absolute h-[375px] w-[750px] sm:h-[768px] sm:w-[1536px] lg:h-[1200px] lg:w-[2400px] rounded-[100%] left-1/2 -translate-x-1/2 border-[#B48CDE]
-       bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)];
+    @apply absolute h-[375px] w-[750px] sm:h-[768px] sm:w-[1536px] lg:h-[1200px] lg:w-[2400px]  xl:w-[3000px] rounded-[100%] left-1/2 -translate-x-1/2 border-[#B48CDE]
+       bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)] xl:top-[calc(100%-120px)];
+  }
+
+  .mask-overlay {
+    @apply before:content-[""] after:content-[""] before:absolute after:absolute before:h-full before:w-10 after:h-full after:w-10 before:top-0 before:left-0 after:top-0 after:right-0 before:bg-[linear-gradient(to_right,black,transparent)] after:bg-[linear-gradient(to_left,black,transparent)];
   }
 }
