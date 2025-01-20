@@ -1,6 +1,7 @@
 'use client';
-import clsx from 'clsx';
+
 import { NextPage } from 'next';
+import clsx from 'clsx';
 
 interface Props {
   title: string;

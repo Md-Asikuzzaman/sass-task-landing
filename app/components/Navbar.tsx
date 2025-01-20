@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { Button } from './Button';
 
 export const Navbar = () => {
   return (
@@ -36,7 +37,7 @@ export const Navbar = () => {
         Customers
       </Link>
 
-      <button className='bg-white py-2 px-4 rounded-lg'>Get for free</button>
+      <Button type='medium'>Get for free</Button>
     </nav>
   );
 };

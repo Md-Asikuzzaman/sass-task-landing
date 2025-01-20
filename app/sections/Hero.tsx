@@ -5,6 +5,7 @@ import Container from '../components/Container';
 import Link from 'next/link';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import Image from 'next/image';
+import { Button } from '../components/Button';
 
 const Hero = () => {
   return (
@@ -53,9 +54,7 @@ const Hero = () => {
           progress, motive your efforts, and celebrate your successes.
         </p>
         <div className='text-center mt-8'>
-          <button className='bg-white py-3 px-5 rounded-lg text-black font-medium'>
-            Get for free
-          </button>
+          <Button type='large'>Get for free</Button>
         </div>
       </Container>
     </section>

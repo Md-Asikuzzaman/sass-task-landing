@@ -1,3 +1,4 @@
+import CallToAction from './sections/CallToAction';
 import FAQs from './sections/FAQs';
 import Features from './sections/Features';
 import Header from './sections/Header';
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <ProductShowcase />
       <FAQs />
+      <CallToAction />
     </>
   );
 }
