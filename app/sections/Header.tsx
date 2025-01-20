@@ -1,9 +1,10 @@
 'use client';
 
-import { Banner } from '../components/Banner';
-import Container from '../components/Container';
 import Link from 'next/link';
 import Image from 'next/image';
+
+import Container from '../components/Container';
+import { Banner } from '../components/Banner';
 import { Navbar } from '../components/Navbar';
 
 const Header = () => {
