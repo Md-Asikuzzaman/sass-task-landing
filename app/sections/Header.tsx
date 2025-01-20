@@ -12,7 +12,7 @@ const Header = () => {
       <Banner />
       <div className='py-4 bg-black'>
         <Container className='flex items-center justify-between'>
-          <div className='inline-flex relative before:content-[""] before:h-full before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:absolute before:blur-md'>
+          <div className='inline-flex relative before:content-[""] before:top-2 before:bottom-0 before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:absolute before:blur-md'>
             <Link href='/' className='relative'>
               <Image
                 src={'/images/logo/logo.png'}
