@@ -8,6 +8,9 @@ const dmSans = DM_Sans({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Sass Task Landing Page',
   description: 'One Task at a Time',
+  icons: {
+    icon: ""
+  },
   openGraph: {
     title: 'Sass Task Landing Page',
     description: 'One Task at a Time',
