@@ -3,26 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Container from '../components/Container';
-import dynamic from 'next/dynamic';
-
-const Instagram = dynamic(() => import('./../social-icon/insta.svg'), {
-  ssr: false,
-});
-const Linkedin = dynamic(() => import('./../social-icon/linkedin.svg'), {
-  ssr: false,
-});
-const Tiktok = dynamic(() => import('./../social-icon/tiktok.svg'), {
-  ssr: false,
-});
-const Twitter = dynamic(() => import('./../social-icon/x-social.svg'), {
-  ssr: false,
-});
-const Pinterest = dynamic(() => import('./../social-icon/pinterest.svg'), {
-  ssr: false,
-});
-const Youtube = dynamic(() => import('./../social-icon/youtube.svg'), {
-  ssr: false,
-});
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -35,22 +16,52 @@ const Footer = () => {
           </p>
           <div className='flex justify-center items-center gap-2.5'>
             <Link href='#'>
-              <Instagram />
+              <Image
+                src={'/images/social-icon/insta.svg'}
+                alt={'social'}
+                height={30}
+                width={30}
+              />
             </Link>
             <Link href='#'>
-              <Linkedin />
+              <Image
+                src={'/images/social-icon/linkedin.svg'}
+                alt={'social'}
+                height={30}
+                width={30}
+              />
             </Link>
             <Link href='#'>
-              <Twitter />
+              <Image
+                src={'/images/social-icon/tiktok.svg'}
+                alt={'social'}
+                height={30}
+                width={30}
+              />
             </Link>
             <Link href='#'>
-              <Tiktok />
+              <Image
+                src={'/images/social-icon/x-social.svg'}
+                alt={'social'}
+                height={30}
+                width={30}
+              />
             </Link>
             <Link href='#'>
-              <Pinterest />
+              <Image
+                src={'/images/social-icon/pinterest.svg'}
+                alt={'social'}
+                height={30}
+                width={30}
+              />
             </Link>
             <Link href='#'>
-              <Youtube />
+              <Image
+                src={'/images/social-icon/youtube.svg'}
+                alt={'social'}
+                height={30}
+                width={30}
+              />
             </Link>
           </div>
         </div>
