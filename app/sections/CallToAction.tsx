@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const CallToAction = () => {
   return (
-    <section className='bg-black text-white py-[72px] md:py-24'>
+    <section className='bg-black text-white py-[72px] md:py-24 overflow-clip'>
       <Container className='relative max-w-xl'>
         <SectionTitle title='Get instant access' />
         <SectionDesc
@@ -28,10 +28,10 @@ const CallToAction = () => {
         </form>
         {/* ui design */}
 
-        <div className='h-48 w-48 absolute -top-[50px] -left-[200px]'>
+        <div className='h-48 w-48 absolute -top-[50px] -left-[200px] hidden md:inline'>
           <Image src={'/images/ui/emojistar.png'} alt={'img'} fill />
         </div>
-        <div className='h-48 w-48 absolute top-[10px] -right-[200px]'>
+        <div className='h-48 w-48 absolute top-[10px] -right-[200px] hidden md:inline'>
           <Image src={'/images/ui/helix2.png'} alt={'img'} fill />
         </div>
       </Container>
