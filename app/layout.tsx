@@ -44,7 +44,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <link rel='icon' href='/images/logo/logo.png' sizes='any' />
+        <link
+          rel='icon'
+          href='/images/logo/logo.png'
+          type='image/x-icon'
+          sizes='16x16'
+        />
       </head>
       <body className={clsx(dmSans.className, 'antialiased')}>{children}</body>
     </html>
