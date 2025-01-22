@@ -6,19 +6,19 @@ import './globals.css';
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Sass Time Landing Page',
+  title: 'Sass Task Landing Page',
   description: 'One Task at a Time',
   openGraph: {
-    title: 'Sass Time Landing Page',
+    title: 'Sass Task Landing Page',
     description: 'One Task at a Time',
-    url: 'https://sass-time-landing.vercel.app',
-    siteName: 'Sass Time',
+    url: 'https://sass-task-landing.vercel.app',
+    siteName: 'Sass Task',
     images: [
       {
-        url: 'https://sass-time-landing.vercel.app/images/logo/logo.png', // Absolute URL for OG image
+        url: 'https://sass-task-landing.vercel.app/images/logo/logo.png', // Absolute URL for OG image
         width: 1200, // Recommended size for OG
         height: 630,
-        alt: 'Sass Time Logo',
+        alt: 'Sass Task Logo',
       },
     ],
     locale: 'en_US',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sass Time Landing Page',
+    title: 'Sass Task Landing Page',
     description: 'One Task at a Time',
-    images: ['https://sass-time-landing.vercel.app/images/logo/logo.png'], // Absolute URL for Twitter image
+    images: ['https://sass-task-landing.vercel.app/images/logo/logo.png'], // Absolute URL for Twitter image
   },
 };
 

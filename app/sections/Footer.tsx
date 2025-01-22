@@ -3,13 +3,26 @@
 import React from 'react';
 import Link from 'next/link';
 import Container from '../components/Container';
+import dynamic from 'next/dynamic';
 
-import Instagram from './../social-icon/insta.svg';
-import Linkedin from './../social-icon/linkedin.svg';
-import Tiktok from './../social-icon/tiktok.svg';
-import Twitter from './../social-icon/x-social.svg';
-import Pinterest from './../social-icon/pinterest.svg';
-import Youtube from './../social-icon/youtube.svg';
+const Instagram = dynamic(() => import('./../social-icon/insta.svg'), {
+  ssr: false,
+});
+const Linkedin = dynamic(() => import('./../social-icon/linkedin.svg'), {
+  ssr: false,
+});
+const Tiktok = dynamic(() => import('./../social-icon/tiktok.svg'), {
+  ssr: false,
+});
+const Twitter = dynamic(() => import('./../social-icon/x-social.svg'), {
+  ssr: false,
+});
+const Pinterest = dynamic(() => import('./../social-icon/pinterest.svg'), {
+  ssr: false,
+});
+const Youtube = dynamic(() => import('./../social-icon/youtube.svg'), {
+  ssr: false,
+});
 
 const Footer = () => {
   return (
