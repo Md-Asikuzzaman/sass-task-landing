@@ -5,6 +5,8 @@ import Container from '../components/Container';
 import Image from 'next/image';
 import { logos } from '../utils/data';
 
+import { motion } from 'framer-motion';
+
 const LogoTicker = () => {
   return (
     <section className='bg-black text-white py-[72px] sm:py-24'>
@@ -13,7 +15,7 @@ const LogoTicker = () => {
           Trusted by the world&apos;s most innovative teams.
         </h2>
         <div className='relative overflow-hidden mt-9 mask-overlay'>
-          <div className='flex gap-16'>
+          <motion.div className='flex gap-16 flex-none'>
             {[...logos, ...logos].map(({ src, alt }, i) => (
               <Image
                 key={i}
@@ -24,7 +26,7 @@ const LogoTicker = () => {
                 className='h-8 w-auto flex-none'
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>
