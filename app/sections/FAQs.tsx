@@ -4,7 +4,7 @@ import React from 'react';
 import Container from '../components/Container';
 import { SectionTitle } from '../components/SectionTitle';
 import { faqs } from '../utils/data';
-import FaqCard from '../components/FaqCard';
+import AccordionItem from '../components/AccordionItem';
 
 const FAQs = () => {
   return (
@@ -16,7 +16,7 @@ const FAQs = () => {
         />
         <div className='mt-12 max-w-[648px] mx-auto'>
           {faqs.map((faq, i) => (
-            <FaqCard key={i} faq={faq} />
+            <AccordionItem key={i} faq={faq} />
           ))}
         </div>
       </Container>
