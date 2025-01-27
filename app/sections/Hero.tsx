@@ -1,11 +1,13 @@
 'use client';
 
-import React from 'react';
-import Container from '../components/Container';
 import Link from 'next/link';
-import { IoIosArrowRoundForward } from 'react-icons/io';
 import Image from 'next/image';
+
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { Button } from '../components/Button';
+import Container from '../components/Container';
+
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -33,20 +35,34 @@ const Hero = () => {
             One Task <br /> at a Time
           </h1>
           {/* UI images */}
-          <Image
+
+          <motion.div
             className='absolute hidden md:inline top-[100px] -left-[60px]'
-            src={'/images/ui/cursor.png'}
-            alt={'image'}
-            height={200}
-            width={200}
-          />
-          <Image
+            drag
+            dragSnapToOrigin
+          >
+            <Image
+              src={'/images/ui/cursor.png'}
+              alt={'image'}
+              height={200}
+              width={200}
+              draggable='false'
+            />
+          </motion.div>
+
+          <motion.div
             className='absolute hidden md:inline top-[80px] -right-[85px]'
-            src={'/images/ui/message.png'}
-            alt={'image'}
-            height={200}
-            width={200}
-          />
+            drag
+            dragSnapToOrigin
+          >
+            <Image
+              src={'/images/ui/message.png'}
+              alt={'image'}
+              height={200}
+              width={200}
+              draggable='false'
+            />
+          </motion.div>
         </div>
 
         <p className='mx-auto text-center text-xl mt-8 max-w-md'>
