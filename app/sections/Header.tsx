@@ -4,13 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Container from '../components/Container';
-import { Banner } from '../components/Banner';
 import { Navbar } from '../components/Navbar';
 
 const Header = () => {
   return (
-    <header>
-      <Banner />
+    <header className='sticky top-0 z-50'>
       <div className='py-4 bg-black'>
         <Container className='flex items-center justify-between'>
           <div className='inline-flex relative before:content-[""] before:top-2 before:bottom-0 before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:absolute before:blur-md'>

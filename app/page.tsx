@@ -1,3 +1,4 @@
+import { Banner } from './components/Banner';
 import CallToAction from './sections/CallToAction';
 import FAQs from './sections/FAQs';
 import Features from './sections/Features';
@@ -10,6 +11,7 @@ import ProductShowcase from './sections/ProductShowcase';
 export default function Home() {
   return (
     <>
+      <Banner />
       <Header />
       <Hero />
       <LogoTicker />
