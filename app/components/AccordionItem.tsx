@@ -2,7 +2,6 @@
 
 import { NextPage } from 'next';
 import { useState } from 'react';
-import clsx from 'clsx';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
 import { motion, AnimatePresence } from 'framer-motion';

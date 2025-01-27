@@ -1,15 +1,29 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Container from '../components/Container';
 import { SectionTitle } from '../components/SectionTitle';
 import SectionDesc from '../components/SectionDesc';
 import { Button } from '../components/Button';
 import Image from 'next/image';
 
+import { motion, useScroll, useTransform } from 'framer-motion';
+
 const CallToAction = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end end'],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [-80, 80]);
+
   return (
-    <section className='bg-black text-white py-[72px] md:py-24 overflow-clip'>
+    <section
+      className='bg-black text-white py-[72px] md:py-24 overflow-x-clip'
+      ref={containerRef}
+    >
       <Container className='relative max-w-xl'>
         <SectionTitle title='Get instant access' />
         <SectionDesc
@@ -28,12 +42,18 @@ const CallToAction = () => {
         </form>
         {/* ui design */}
 
-        <div className='h-48 w-48 absolute -top-[50px] -left-[200px] hidden md:inline'>
+        <motion.div
+          className='h-48 w-48 absolute -top-[50px] -left-[200px] hidden md:inline'
+          style={{ translateY }}
+        >
           <Image src={'/images/ui/emojistar.png'} alt={'img'} fill />
-        </div>
-        <div className='h-48 w-48 absolute top-[10px] -right-[200px] hidden md:inline'>
+        </motion.div>
+        <motion.div
+          style={{ translateY }}
+          className='h-48 w-48 absolute top-[10px] -right-[200px] hidden md:inline'
+        >
           <Image src={'/images/ui/helix2.png'} alt={'img'} fill />
-        </div>
+        </motion.div>
       </Container>
     </section>
   );
